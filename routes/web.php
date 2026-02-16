@@ -7,13 +7,16 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('login')->name('login');
 });
 
 Route::get('/register', function () {
-    return view ('register');
+    return view ('register')->name('register');
 });
 
 Route::get('/dashboard', function(){
-    return view ('dashboard');
+    return view ('dashboard')->name('dashboard');
 });
+
+// Route::post('/login', LoginController::class, 'login')->name('login.attempt');
+// Route::post('/register', RegisterController::class, 'register')->name('register.attempt');
