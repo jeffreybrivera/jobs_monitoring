@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="flex items-center justify-center min-h-screen">
-    <form class="max-w-md mx-auto">
+    <form method="POST" action=" {{ route('register.attempt') }} " class="max-w-md mx-auto">
         <h1 class="mb-7">Register Here</h1>
         <div class="relative z-0 w-full mb-5 group">
             <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default-medium appearance-none focus:outline-none focus:ring-0 focus:border-brand peer" placeholder=" " required />
