@@ -2,7 +2,7 @@
 @section('title', 'Login Page')
 @section('content')
     <div class="flex items-center justify-center min-h-screen">
-        <form method="POST" action=" {{ route('login.attempt') }} " class="max-w-sm mx-auto">
+        <form method="POST" class="max-w-sm mx-auto">
             <div class="mb-5">
                 <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Email</label>
                 <input type="email" id="email" name="email" class="border text-sm rounded-md focus:border-black w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="ecsimple13@gmail.com" required />
